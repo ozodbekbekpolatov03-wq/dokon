@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'shop.apps.ShopConfig',
     'dashboard.apps.DashboardConfig',
+    "crispy_bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,6 @@ EMAIL_USE_SSL = False
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'username@example.com'
 EMAIL_HOST_PASSWORD = 'your-password'
+
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".ngrok-free.dev"]
+CSRF_TRUSTED_ORIGINS = ["https://*.ngrok-free.dev"]
